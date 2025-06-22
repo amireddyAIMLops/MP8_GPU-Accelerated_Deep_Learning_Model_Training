@@ -1,0 +1,2 @@
+
+2025-06-22T23:30:03.009499 -- {'cpu': [{'training_time': 442.74981474876404, 'best_accuracy': 72.92, 'best_epoch': 4, 'hyperparameters': {'lr': 0.001, 'batch': 64, 'optimizer': 'adam', 'patience': 3, 'paramid': 'run1'}}], 'gpu': [{'training_time': 42.2995662689209, 'best_accuracy': 72.8, 'best_epoch': 4, 'hyperparameters': {'lr': 0.001, 'batch': 64, 'optimizer': 'adam', 'patience': 3, 'paramid': 'run1'}}]}

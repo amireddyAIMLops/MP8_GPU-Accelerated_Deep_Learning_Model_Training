@@ -1,6 +1,100 @@
 
 ========================================
-Benchmark Run: 2025-06-22T22:50:53.892360
-PyTorch version: 2.7.1+cu126
-CUDA available: False
+Benchmark Run: 2025-06-22T23:21:37.208832
+PyTorch version: 2.7.1+cu128
+CUDA available: True
+CUDA device: NVIDIA GeForce RTX 5070 Ti
 ========================================
+
+==============================
+Grid search run 1/1: {'lr': 0.001, 'batch_size': 64, 'optimizer_type': 'adam', 'param_id': 'run1'}
+Training on cpu with lr=0.001, batch_size=64, optimizer=adam, patience=3
+[1, 1] loss: 2.7435
+[1, 101] loss: 1.8044
+[1, 201] loss: 1.6737
+[1, 301] loss: 1.6022
+[1, 401] loss: 1.5353
+[1, 501] loss: 1.4826
+[1, 601] loss: 1.4371
+[1, 701] loss: 1.3972
+Epoch 1: Test Accuracy: 59.22%
+Model saved to models/best_model_cpu_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 59.22%
+[2, 1] loss: 1.1027
+[2, 101] loss: 1.0534
+[2, 201] loss: 1.0305
+[2, 301] loss: 1.0236
+[2, 401] loss: 1.0229
+[2, 501] loss: 1.0103
+[2, 601] loss: 1.0006
+[2, 701] loss: 0.9909
+Epoch 2: Test Accuracy: 66.51%
+Model saved to models/best_model_cpu_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 66.51%
+[3, 1] loss: 0.9050
+[3, 101] loss: 0.8224
+[3, 201] loss: 0.8134
+[3, 301] loss: 0.8110
+[3, 401] loss: 0.8122
+[3, 501] loss: 0.8085
+[3, 601] loss: 0.8088
+[3, 701] loss: 0.8089
+Epoch 3: Test Accuracy: 71.80%
+Model saved to models/best_model_cpu_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 71.80%
+[4, 1] loss: 0.9596
+[4, 101] loss: 0.6594
+[4, 201] loss: 0.6699
+[4, 301] loss: 0.6771
+[4, 401] loss: 0.6766
+[4, 501] loss: 0.6759
+[4, 601] loss: 0.6816
+[4, 701] loss: 0.6817
+Epoch 4: Test Accuracy: 72.92%
+Model saved to models/best_model_cpu_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 72.92%
+Finished Training in 442.75 seconds
+Best Test Accuracy: 72.92% (Epoch 4)
+
+==============================
+Grid search run 1/1: {'lr': 0.001, 'batch_size': 64, 'optimizer_type': 'adam', 'param_id': 'run1'}
+Training on cuda with lr=0.001, batch_size=64, optimizer=adam, patience=3
+[1, 1] loss: 2.5260
+[1, 101] loss: 1.8365
+[1, 201] loss: 1.6886
+[1, 301] loss: 1.5979
+[1, 401] loss: 1.5381
+[1, 501] loss: 1.4889
+[1, 601] loss: 1.4488
+[1, 701] loss: 1.4098
+Epoch 1: Test Accuracy: 57.88%
+Model saved to models/best_model_cuda_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 57.88%
+[2, 1] loss: 1.0986
+[2, 101] loss: 1.0874
+[2, 201] loss: 1.0564
+[2, 301] loss: 1.0384
+[2, 401] loss: 1.0250
+[2, 501] loss: 1.0132
+[2, 601] loss: 1.0071
+[2, 701] loss: 0.9961
+Epoch 2: Test Accuracy: 66.67%
+Model saved to models/best_model_cuda_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 66.67%
+[3, 1] loss: 0.7525
+[3, 101] loss: 0.8053
+[3, 201] loss: 0.8086
+[3, 301] loss: 0.8117
+[3, 401] loss: 0.8114
+[3, 501] loss: 0.8123
+[3, 601] loss: 0.8145
+[3, 701] loss: 0.8119
+Epoch 3: Test Accuracy: 69.73%
+Model saved to models/best_model_cuda_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 69.73%
+[4, 1] loss: 0.5444
+[4, 101] loss: 0.6498
+[4, 201] loss: 0.6636
+[4, 301] loss: 0.6780
+[4, 401] loss: 0.6823
+[4, 501] loss: 0.6843
+[4, 601] loss: 0.6834
+[4, 701] loss: 0.6881
+Epoch 4: Test Accuracy: 72.80%
+Model saved to models/best_model_cuda_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 72.80%
+Finished Training in 42.30 seconds
+Best Test Accuracy: 72.80% (Epoch 4)
+Benchmark Results: {'cpu': [{'training_time': 442.74981474876404, 'best_accuracy': 72.92, 'best_epoch': 4, 'hyperparameters': {'lr': 0.001, 'batch': 64, 'optimizer': 'adam', 'patience': 3, 'paramid': 'run1'}}], 'gpu': [{'training_time': 42.2995662689209, 'best_accuracy': 72.8, 'best_epoch': 4, 'hyperparameters': {'lr': 0.001, 'batch': 64, 'optimizer': 'adam', 'patience': 3, 'paramid': 'run1'}}]}
