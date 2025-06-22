@@ -5,10 +5,14 @@ import os
 import datetime
 
 param_grid = {
-        "lr": [0.001, 0.01],
-        "batch_size": [64, 128],
-        "optimizer_type": ["adam", "sgd"]
+        #"lr": [0.001, 0.01],
+        #"batch_size": [64, 128],
+        #"optimizer_type": ["adam", "sgd"]
+        "lr": [0.001],
+        "batch_size": [64],
+        "optimizer_type": ["adam"]
     }
+    
 
 class Logger:
     def __init__(self, filepath):

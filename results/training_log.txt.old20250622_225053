@@ -1,0 +1,22 @@
+
+========================================
+Benchmark Run: 2025-06-22T22:45:42.620900
+PyTorch version: 2.7.1+cu126
+CUDA available: False
+========================================
+
+==============================
+Grid search run 1/8: {'lr': 0.001, 'batch_size': 64, 'optimizer_type': 'adam', 'param_id': 'run1'}
+Training on cpu with lr=0.001, batch_size=64, optimizer=adam, patience=3
+[1, 1] loss: 2.4852
+[1, 101] loss: 1.8360
+[1, 201] loss: 1.6682
+[1, 301] loss: 1.5858
+[1, 401] loss: 1.5286
+[1, 501] loss: 1.4792
+[1, 601] loss: 1.4345
+[1, 701] loss: 1.3953
+Epoch 1: Test Accuracy: 57.64%
+Model saved to models/best_model_cpu_lr0.001_batch64_optimizeradam_paramidrun1.pth with accuracy 57.64%
+[2, 1] loss: 1.0695
+[2, 101] loss: 1.0485
